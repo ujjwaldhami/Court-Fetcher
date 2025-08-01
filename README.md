@@ -2,32 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Court Data Fetcher - README</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      line-height: 1.6;
-    }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-    code {
-      background-color: #f4f4f4;
-      padding: 2px 4px;
-      border-radius: 4px;
-      font-family: monospace;
-    }
-    pre {
-      background-color: #f4f4f4;
-      padding: 10px;
-      border-radius: 5px;
-      overflow-x: auto;
-    }
-    ul {
-      margin-left: 20px;
-    }
-  </style>
+ 
+      b
 </head>
 <body>
 
