@@ -1,0 +1,21 @@
+{% extends "fetcher/base.html" %}
+{% load form_filters %}  
+
+{% block content %}
+<div class="card shadow p-4">
+  <h3 class="mb-3">Case Details</h3>
+  {% if data.error %}
+    <div class="alert alert-danger">{{ data.error }}</div>
+  {% else %}
+    <table class="table table-bordered">
+      {% for key, value in data.items %}
+        <tr>
+          <th>{{ key|replace_underscore }}</th>  
+          <td>{{ value }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  {% endif %}
+  <a href="/" class="btn btn-secondary mt-3">Back</a>
+</div>
+{% endblock %}

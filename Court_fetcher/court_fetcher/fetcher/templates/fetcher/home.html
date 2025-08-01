@@ -1,0 +1,35 @@
+{% extends "fetcher/base.html" %}
+{% load widget_tweaks %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div class="card shadow p-4">
+      <h3 class="mb-4 text-center">Court Case Lookup</h3>
+        <form method="get">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label class="form-label">Court Name</label>
+                {{ form.court_name|add_class:"form-control" }}
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Case Type</label>
+                {{ form.case_type|add_class:"form-control" }}
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Case Number</label>
+                {{ form.case_number|add_class:"form-control" }}
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Filing Year</label>
+                {{ form.filing_year|add_class:"form-control" }}
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Fetch Details</button>
+        </form>
+
+
+
+    </div>
+  </div>
+</div>
+{% endblock %}
