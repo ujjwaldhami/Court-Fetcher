@@ -28,7 +28,7 @@ pip install -r requirements.txt
 python manage.py runserver
 </code></pre>
 
-  <h2>🤖 CAPTCHA Strategy</h2>
+  <h2>🤖 CAPTCHA Strategy</h2> 
   <ul>
     <li>Currently uses <code>2Captcha</code> API (optional)</li>
     <li>Fallback: Manual entry if CAPTCHA fails or API not configured</li>
